@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Model Prediction Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> <!-- CSS dosyasının bağlantısı -->
+</head>
+<body>
+    <h1>Model Prediction Form</h1>
+    <form method="POST" action="/predict">
+        Sepal Length: <input type="text" name="sepal_length"><br>
+        Sepal Width: <input type="text" name="sepal_width"><br>
+        Petal Length: <input type="text" name="petal_length"><br>
+        Petal Width: <input type="text" name="petal_width"><br>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
+
